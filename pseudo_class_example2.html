@@ -1,0 +1,36 @@
+<!-- Design a webpage that includes: 
+1. A button that changes its color when hovered over and when clicked. 
+2. A text input field that changes its background color when it gains focus. 
+3. An unordered list where: 
+• The second list item is styled differently, with red text color and bold font. 
+• One of the list items has a class named “special”, and all other list items 
+(except the one with this class) have an aqua background and italic font 
+style.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            color: rebeccapurple;
+            font-size: 50px;
+            background-color: white;
+        }
+        input:focus{
+            background-color: salmon;
+            border: 5px dashed black;
+        }
+        ul li:nth-child(2){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pain and Cure</h1>
+    <button>Submit</button><br><br>
+    Author Name:<input type="text" placeholder="click to focus"><br>
+    <ul>
+</body>
+</html>
