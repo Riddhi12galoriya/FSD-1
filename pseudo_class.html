@@ -1,0 +1,66 @@
+<!-- Pseudo class types: 
+1) link 
+2) visited
+3)hover
+4)active
+5)focus
+6) nth-child(2)
+7)not(selector)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* link type */
+        a:link{
+            color: red;
+        }
+        /* visited type */
+        a:visited{
+            color: green;
+        }
+        /* hover type */
+        a:hover{
+            color: yellow;
+            font-size: 50px;
+            background-color: blue;
+        }
+        /* active type */
+        a:active{
+            color: black;
+        }
+        /* focus type */
+        input:focus{
+            background-color: red;
+            border: 5px dashed green;
+        }
+        /* nth-child type */
+        ul li:nth-child(2){
+            color: red;
+            font-size: 30px;
+        }
+        /* not(selector) type */
+        ul li:not(.special){
+            color: green;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Styling a link depending upon state or position</h2>
+    <!-- link type -->
+    <p><b><a href="https://www.wattpad.com/story/352805966-p%E1%B4%80%C9%AA%C9%B4-c%E1%B4%9C%CA%80%E1%B4%87" target="_blank">Pain and Cure</a></b></p>
+    <!-- focus type -->
+    First Name:<input type="text" placeholder="click to focus"><br>
+    <!-- nth-child type -->
+     <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li class="special">List 3</li>
+        <li>List 4</li>
+     </ul>
+</body>
+</html>
