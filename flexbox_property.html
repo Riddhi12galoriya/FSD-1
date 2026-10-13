@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse/ column/ column-reverse/row */
+            justify-content: space-between; 
+            /*justify-content: space-betweem/ flex-start/ flex-end/ center/ space-around/ space-evenly; It helps in align item horizontally*/
+            align-items: center;
+            /* It helps in aligning items vertically, align-items: center/ stretch/ flex-start/ flex-end */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap/ nowrap/ wrap-reverse */
+            gap: 15px;
+            background-color: lightblue;
+            padding: 15px;
+        }
+        .item{
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .item:nth-child(2){
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <!-- This has multi-line para. -->
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
