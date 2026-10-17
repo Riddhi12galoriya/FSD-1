@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 10px;
+            margin-top: 200px;
+            margin-left: 200px;
+            border-left:dotted blue;
+            border-top: solid green;
+            border-bottom: solid black;
+            border-right: dotted red ;
+            transition-duration: 5s;
+            /* this helps in smoothly changing the property */
+            /* transition-delay: 2s; */
+            /* it delays the transition */
+            transition-timing-function: ease;
+        }
+
+        img:hover{
+            transform: translate(200px, 50px) rotate(360deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="Himanshu-Awasthi.jpg" id="Himanshu-Awasthi">
+</body>
+</html>
