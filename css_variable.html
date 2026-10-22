@@ -1,0 +1,37 @@
+<!-- It can be accessed globally and locally.
+Syntax:
+(1) globally - :root{--b:blue} 
+(2) locally - p{--c:center}-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Global variable */
+        :root{
+            --b:blue;
+            --all:solid dashed dotted double;
+            --p20:20px;
+        }
+
+        /* Local Variable */
+        p{
+            --c:center;
+            --b:yellow;
+            border-style: var(--all);
+            padding: var(--p20);
+            border-color: var(--b);
+        }
+        h1{
+            color: var(--b);
+            text-align: var(--c);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Good Morning Baby!!</p>
+</body>
+</html>
