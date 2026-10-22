@@ -1,0 +1,39 @@
+<!-- It has 3 types: 
+(1) Linear 
+(2) Radial- by center
+(3) conic- around center-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad1{
+            height: 400px;
+            width: 400px;
+            background-color: blueviolet;
+            /* background-image: linear-gradient(yellow, red, blue, pink, green); */
+            /* background-image:to right/ to left/ to top/ to bottom/ to right button/ to right top/ to bottom left/ to bottom left/ to bottom right; linear-gradient(yellow 20%, red 30% blue 40%,pink 50%, green 60%); */
+            background-image: linear-gradient(260deg, yellow 20%, red 30%, blue 40%, pink 50%,green 60%);
+        }
+        #grad2{
+            height: 400px;
+            width: 400px;
+            background-color: blueviolet;
+            background-image: radial-gradient(yellow, red, blue, pink,green);
+        }
+        #grad3{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            background-image: conic-gradient(yellow,red,blue,pink,green);
+        }
+    </style>
+</head>
+<body>
+    <div id="grad1">Gradient</div>
+    <div id="grad2">Radial Gradient</div> 
+    <div id="grad3"></div>
+</body>
+</html>

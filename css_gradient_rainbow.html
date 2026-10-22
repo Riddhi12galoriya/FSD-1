@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rainbow Arch</title>
+<style>
+  #grad1 {
+    height: 200px;
+    width: 400px;
+    /* Red on the outside (0% to 50%), progressing to Violet on the inside, followed by a transparent cutout */
+    background-image: radial-gradient(
+      circle at 50% 100%, 
+      transparent 40%, 
+      violet 40%, 
+      indigo 45%, 
+      blue 50%, 
+      green 55%, 
+      yellow 60%, 
+      orange 65%, 
+      red 70%,
+      transparent 71%
+    );
+    }
+</style>
+</head>
+<body>
+  <div id="grad1">Rainbow using Gradient</div>
+</body>
+</html>
