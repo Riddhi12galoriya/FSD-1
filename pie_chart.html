@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad1{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: pink;
+            background-image: conic-gradient(white 45deg, yellow 90deg, green 180deg, blue 360deg);
+        }
+        #grad2{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: pink;
+            background-image: conic-gradient(red 0deg, red 45deg, yellow 45deg, yellow 90deg, green 90deg, green 180deg, blue 180deg, blue 360deg);
+            transition-duration: 4s;
+        }
+        div:hover{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="grad1">Rii</div>
+    <div id="grad2"></div>
+</body>
+</html>
