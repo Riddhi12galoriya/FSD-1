@@ -1,0 +1,69 @@
+<!-- Create an animation for a <div> element that moves in a square path while changing its background color at each 
+corner. The animation should have a duration of 10 seconds and should start as if it has already been running 
+for 2 seconds (i.e., 2 seconds already completed). It should play forward and then in reverse continuously. 
+The animation must change both the background color and the position of the <div> element at 25%, 50%, 75%, and 100% 
+completion. Additionally, rotate the <div> at any angle while it moves along the path.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation-container{
+            width: 500px;
+            height: 400px;
+            /* background-color: blue; */
+            border: dashed;
+        }
+        .movingbox{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            position: relative;
+
+            /* Apply requirements */
+            animation-name: abc;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+            /* Start 2 seconds into an animation cycle */
+            animation-delay: -2s;
+        }
+    /* 
+        0% -> Top-Left
+        25% -> Top-Right
+        50% -> Bottom-Right
+        75% -> Bottom-Left 
+        100% -> Back to Top-Left
+        A rotation of 45deg is added to tilt the element while it traverses.
+    */
+        @keyframes abc {
+            0%, 100% {
+                background-color: blue;
+                transform: rotate(0deg) translate(0px,0px);
+            }
+            25% {
+                background-color: yellow;
+                transform: rotate(0deg) translate(400px,0px);
+            }
+            50% {
+                background-color: green;
+                transform: rotate(0deg) translate(400px,300px);
+            }
+            75% {
+                background-color: purple;
+                transform: rotate(0deg) translate(0px,300px);
+            }
+        }
+
+    </style>
+</head>
+<body><div class="animation-container">
+    <div class="movingbox">Ridhi</div></div>
+</body>
+</html>
